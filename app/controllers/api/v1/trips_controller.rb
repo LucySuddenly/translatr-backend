@@ -1,4 +1,4 @@
-class Api::V1::TripController < ApplicationController
+class Api::V1::TripsController < ApplicationController
 
   def index
     @trips = Trip.all
