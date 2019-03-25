@@ -6,8 +6,8 @@ Rails.application.routes.draw do
       resources :users do
         resources :trips, only: [:index]
       end
-      resources :trips, only: [:show, :create, :update, :delete] do
-        resources :translations, only: [:show, :index, :create, :update, :delete]
+      resources :trips, only: [:show, :create, :update, :destroy] do
+        resources :translations, only: [:show, :index, :create, :update, :destroy]
       end
       post '/translate', to: "translate#new"
       # get "/users", to: "user#index"
