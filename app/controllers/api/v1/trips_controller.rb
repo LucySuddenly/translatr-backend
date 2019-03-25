@@ -11,4 +11,9 @@ class Api::V1::TripsController < ApplicationController
     render json: @trip
   end
 
+  def create
+    @trip = Trip.create(name: params[:name], user_id: params[:user_id])
+    render json: @trip
+  end
+
 end
