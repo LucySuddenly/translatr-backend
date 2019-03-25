@@ -1,7 +1,8 @@
 class Api::V1::TranslationsController < ApplicationController
 
   def index
-    @translations = Translation.all
+    trip = Trip.find(params[:trip_id])
+    @translations = trip.translations
     render json: @translations
   end
 

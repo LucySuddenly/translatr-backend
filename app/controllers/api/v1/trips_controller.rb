@@ -1,7 +1,8 @@
 class Api::V1::TripsController < ApplicationController
 
   def index
-    @trips = Trip.all
+    user = User.find(params[:user_id])
+    @trips = user.trips
     render json: @trips
   end
 

@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users do
-        resources :trips, shallow: true
+        resources :trips, only: [:index]
       end
-      resources :trips do
-        resources :translations, shallow: true
+      resources :trips, only: [:show, :create, :update, :delete] do
+        resources :translations, only: [:show, :index, :create, :update, :delete]
       end
       # get "/users", to: "user#index"
       # get "/users/:id", to: "user#show"
