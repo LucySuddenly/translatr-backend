@@ -6,7 +6,8 @@ def new
   text = params[:text]
   target = params[:language]
   translation = translate.translate text, to: target
-  render json: translation
+  @translation = {translation: translation.text}
+  render json: @translation
 end
 
 end
