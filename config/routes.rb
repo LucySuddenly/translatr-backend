@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :trips, only: [:show, :create, :update, :delete] do
         resources :translations, only: [:show, :index, :create, :update, :delete]
       end
+      post '/translate', to: "translate#new"
       # get "/users", to: "user#index"
       # get "/users/:id", to: "user#show"
       # post "/users", to: "user#create"
