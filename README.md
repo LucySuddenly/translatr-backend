@@ -23,11 +23,16 @@ rails server
 
 ## Querying
 
-use a GET request to /api/v1/users/:id to retrieve all data associated with that user.
-use a GET request to /api/v1/users to retrieve all data associated with all users.
-use a POST request to /api/v1/users to create a new user, put "username" as a key in the body of the request.
-use a POST request to /api/v1/trips to create a new trip, put "name" as a key in the body of the request.
-use a POST request to /api/v1/translations to create a new translation, put "source_text" and "output_text" as keys in the body of the request.
+Use a GET request to /api/v1/users/:id to retrieve all data associated with that user.
+
+Use a GET request to /api/v1/users to retrieve all data associated with all users.
+
+Use a POST request to /api/v1/users to create a new user, put "username" as a key in the body of the request.
+
+Use a POST request to /api/v1/trips to create a new trip, put "name" as a key in the body of the request.
+
+Use a POST request to /api/v1/translations to create a new translation, put "source_text" and "output_text" as keys in the body of the request.
+
 use a POST request to /api/v1/translate to get a translation, put "text" and "language" as keys in the body of the request.
 
 ## Built With
