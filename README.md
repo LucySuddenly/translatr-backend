@@ -1,24 +1,38 @@
-# README
+# Translatr -- Backend API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend API for our Javascript project -- it's built on Rails and is designed for use with [this](https://github.com/LucySuddenly/translatr-frontend) frontend.
 
-Things you may want to cover:
+### Installing
 
-* Ruby version
+To install locally, clone down the repo and run
 
-* System dependencies
+```
+bundle install
+```
 
-* Configuration
+## Running
 
-* Database creation
+Simply run
 
-* Database initialization
+```
+rails server
+```
 
-* How to run the test suite
+## Built With
 
-* Services (job queues, cache servers, search engines, etc.)
+* [Ruby on Rails](https://github.com/rails/rails) - Ruby on Rails
 
-* Deployment instructions
+## Contributing
 
-* ...
+Pull requests are welcome.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## License
+
+This project is licensed under the MIT License.
+
+
+
