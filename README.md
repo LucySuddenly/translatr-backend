@@ -2,6 +2,35 @@
 
 This is the backend API for our Javascript project -- it's built on Rails and is designed for use with [this](https://github.com/LucySuddenly/translatr-frontend) frontend. A version is hosted on Heroku, [here](https://translatr-backend.herokuapp.com).
 
+## Motivation
+
+We wanted to use a Google API, and the translate API seemed like a great fit for a project.
+
+## Screenshots
+Home page
+
+<img src="https://i.imgur.com/6dzzX9F.jpg" width="800">
+
+Phrasebook
+
+<img src="https://i.imgur.com/2dfdoaF.png" width="800">
+
+## Technology Used
+
+- Ruby on Rails
+- Google Translate API
+
+## Features
+
+Users can:
+- create accounts
+- create phrasebooks
+- get a translation
+- save translations to phrasebooks
+- view phrasebooks
+- get currency conversions
+
+
 ### Installing
 
 To install locally, clone down the repo and run
